@@ -123,7 +123,6 @@
                             "Code",
                             "Visual Studio Code",
                             "VSCodium",
-                            "Cursor",
                             "Custom"
                         ],
                         "default": "Code",

@@ -375,14 +375,11 @@ export const replaceAppInfo = (text: string): string => {
 
     const isInsider = appName.includes("Insiders");
     const isCodium = appName.startsWith("VSCodium") || appName.startsWith("codium");
-    const isCursor = appName.startsWith("Cursor");
 
     const insiderAppName = isCodium ? "vscodium-insiders" : "vscode-insiders";
     let normalAppName;
 
-    if (isCursor) {
-        normalAppName = "cursor";
-    } else if (isCodium) {
+    if (isCodium) {
         normalAppName = "vscodium";
     } else {
         normalAppName = "vscode";
